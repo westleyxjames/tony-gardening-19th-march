@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenScape Gardening</title>
+    <meta name="description" content="Get in touch with GreenScape Gardening for a free quote. Call 206-971-8293 or fill out our contact form.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #16a34a;
+            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+        }
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Page Hero -->
+    <section style="background: linear-gradient(135deg, #15803d, #16a34a); color: white; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">Contact Us</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto;">
+                Get in touch with us for a free quote or to schedule a consultation
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="font-size: 2rem; font-weight: 700; color: #166534; margin-bottom: 2rem;">Get In Touch</h2>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: #dcfce7; padding: 0.75rem; border-radius: 50%; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: #16a34a; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; font-size: 1.125rem; margin-bottom: 0.25rem;">Email</h3>
+                                <a href="mailto:help@greenscapegradening.com" style="color: #6b7280; transition: color 0.3s;">
+                                    help@greenscapegradening.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: #dcfce7; padding: 0.75rem; border-radius: 50%; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: #16a34a; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; font-size: 1.125rem; margin-bottom: 0.25rem;">Phone</h3>
+                                <a href="tel:206-971-8293" style="color: #6b7280; transition: color 0.3s;">
+                                    206-971-8293
+                                </a>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="background: #dcfce7; padding: 0.75rem; border-radius: 50%; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt" style="color: #16a34a; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; font-size: 1.125rem; margin-bottom: 0.25rem;">Address</h3>
+                                <p style="color: #6b7280; margin: 0;">
+                                    5800 SW 110th Ave<br>
+                                    Davie, FL 33328<br>
+                                    United States
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: start; gap: 1rem;">
+                            <div style="background: #dcfce7; padding: 0.75rem; border-radius: 50%; flex-shrink: 0;">
+                                <i class="fas fa-clock" style="color: #16a34a; font-size: 1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-weight: 600; font-size: 1.125rem; margin-bottom: 0.25rem;">Business Hours</h3>
+                                <p style="color: #6b7280; margin: 0;">
+                                    Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                    Saturday: 9:00 AM - 4:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem;">
+                        <h3 style="font-weight: 600; font-size: 1.125rem; margin-bottom: 1rem;">Why Choose Us?</h3>
+                        <ul style="list-style: none;">
+                            <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <div style="width: 8px; height: 8px; background: #16a34a; border-radius: 50%;"></div>
+                                <span style="color: #374151;">Licensed & Insured</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <div style="width: 8px; height: 8px; background: #16a34a; border-radius: 50%;"></div>
+                                <span style="color: #374151;">100% Satisfaction Guarantee</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <div style="width: 8px; height: 8px; background: #16a34a; border-radius: 50%;"></div>
+                                <span style="color: #374151;">Free Consultations</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem;">
+                                <div style="width: 8px; height: 8px; background: #16a34a; border-radius: 50%;"></div>
+                                <span style="color: #374151;">Eco-Friendly Practices</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <div style="background: white; border: 2px solid #e5e7eb; border-radius: 0.5rem; padding: 2rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; color: #166534; margin-bottom: 0.5rem;">Request a Free Quote</h2>
+                        <p style="color: #6b7280; margin-bottom: 1.5rem;">
+                            Fill out the form below and we'll get back to you within 24 hours.
+                        </p>
+                        
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Required *</label>
+                                <select id="service" name="service" class="form-input" required>
+                                    <option value="">Select a service</option>
+                                    <option value="lawn-care">Lawn Care & Maintenance</option>
+                                    <option value="landscape-design">Landscape Design</option>
+                                    <option value="garden-cleanup">Garden Cleanup</option>
+                                    <option value="irrigation">Irrigation System Setup</option>
+                                    <option value="tree-care">Tree & Shrub Care</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="4" class="form-input"></textarea>
+                            </div>
+
+                            <div style="display: flex; align-items: start; gap: 0.5rem; margin-bottom: 1rem;">
+                                <input type="checkbox" id="consent" name="consent" required style="margin-top: 0.25rem;">
+                                <label for="consent" style="font-size: 0.875rem; color: #6b7280;">
+                                    I agree to the 
+                                    <a href="privacy-policy.html" style="color: #16a34a; text-decoration: underline;">Privacy Policy</a> 
+                                    and 
+                                    <a href="terms.html" style="color: #16a34a; text-decoration: underline;">Terms & Conditions</a> *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                Get Free Quote
+                            </button>
+                        </form>
+
+                        <div class="success-message" id="success-message">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; color: #16a34a; margin-bottom: 0.5rem;">Thank You!</h3>
+                            <p style="color: #6b7280;">We'll get back to you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section style="padding: 0; background: #e5e7eb;">
+        <div style="height: 24rem; background: linear-gradient(to bottom right, #a7f3d0, #6ee7b7); display: flex; align-items: center; justify-content: center;">
+            <div style="text-align: center;">
+                <i class="fas fa-map-marker-alt" style="font-size: 4rem; color: #15803d; margin-bottom: 1rem;"></i>
+                <p style="color: #166534; font-weight: 600;">
+                    5800 SW 110th Ave, Davie, FL 33328, United States
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Sticky CTA -->
+    <div id="sticky-cta"></div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-popup"></div>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent"></div>
+
+    <!-- Back to Top -->
+    <div id="back-to-top"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Hide form, show success message
+            this.style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+            
+            // Reset after 3 seconds
+            setTimeout(() => {
+                this.style.display = 'block';
+                document.getElementById('success-message').style.display = 'none';
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - GreenScape Gardening</title>
+    <meta name="description" content="Find answers to frequently asked questions about GreenScape Gardening services, pricing, and scheduling.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .faq-item {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            text-align: left;
+            font-weight: 600;
+            color: #1f2937;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #f9fafb;
+        }
+        .faq-icon {
+            color: #16a34a;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+        .faq-icon.rotated {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+        }
+        .faq-answer.open {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+        .faq-answer p {
+            color: #374151;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Page Hero -->
+    <section style="background: linear-gradient(135deg, #15803d, #16a34a); color: white; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem;">Frequently Asked Questions</h1>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto;">
+                Find answers to common questions about our gardening services
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <div style="max-width: 48rem; margin: 0 auto;">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How often should I schedule lawn care?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer open">
+                        <p>Typically weekly or bi-weekly depending on grass growth rate, season, and your specific needs. During peak growing season (spring and summer), weekly maintenance is recommended for the best results.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide eco-friendly services?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we prioritize sustainable gardening practices. We use environmentally friendly products, implement water-efficient irrigation systems, and follow organic gardening methods whenever possible to minimize environmental impact.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are your services available nationwide?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we serve multiple locations across the USA. Our network of professional gardeners ensures consistent, high-quality service no matter where you're located. Contact us to confirm availability in your area.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How can I get a quote?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Getting a quote is easy! You can use our online contact form, call us directly at 206-971-8293, or email us at help@greenscapegradening.com. We'll typically respond within 24 hours with a customized quote based on your needs.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What's included in your basic lawn care service?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our basic lawn care service includes professional mowing, edging, basic trimming, and cleanup. We also perform a visual inspection of your lawn to identify any potential issues that may need attention.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you offer one-time services or only regular maintenance?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer both! Whether you need a one-time garden cleanup, seasonal service, or ongoing maintenance plans, we can accommodate your needs. Our flexible scheduling ensures we work within your requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are you licensed and insured?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we are fully licensed and insured. This protects both our team and your property, giving you peace of mind when we're working on your outdoor space.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if I'm not satisfied with the service?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a 100% satisfaction guarantee. If you're not completely happy with our work, we'll make it right at no additional cost. Your satisfaction is our top priority.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How far in advance should I book?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least one week in advance, especially during our busy season (spring and summer). However, we'll do our best to accommodate urgent requests whenever possible.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide free consultations?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer free, no-obligation consultations where we assess your outdoor space and provide expert recommendations tailored to your needs and budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions CTA -->
+    <section style="padding: 4rem 0; background: #f9fafb;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 2rem; font-weight: 700; color: #166534; margin-bottom: 1rem;">
+                Still Have Questions?
+            </h2>
+            <p style="color: #6b7280; margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+                Our team is here to help! Contact us for personalized answers to your gardening questions.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Sticky CTA -->
+    <div id="sticky-cta"></div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-popup"></div>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent"></div>
+
+    <!-- Back to Top -->
+    <div id="back-to-top"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            const isOpen = answer.classList.contains('open');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('open');
+                }
+            });
+            
+            document.querySelectorAll('.faq-icon').forEach(item => {
+                if (item !== icon) {
+                    item.classList.remove('rotated');
+                }
+            });
+            
+            // Toggle current FAQ
+            if (isOpen) {
+                answer.classList.remove('open');
+                icon.classList.remove('rotated');
+            } else {
+                answer.classList.add('open');
+                icon.classList.add('rotated');
+            }
+        }
+
+        // Open first FAQ by default
+        document.querySelector('.faq-icon').classList.add('rotated');
+    </script>
+</body>
+</html>
